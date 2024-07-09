@@ -110,4 +110,4 @@ function SideBar(){
         </React.Fragment>
     )
 }
-export default SideBar;
+export default SideBar; //Perdon si esta desordenado

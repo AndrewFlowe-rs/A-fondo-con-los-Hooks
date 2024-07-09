@@ -80,4 +80,4 @@ function SearchMovies() {
 	);
 };
 
-export default SearchMovies;
+export default SearchMovies; //Andru
