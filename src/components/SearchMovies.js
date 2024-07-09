@@ -14,10 +14,15 @@ function searchMovie (params) {
 		const endPoint =  `http://www.omdbapi.com/?apikey=${apiKey}&s=${keyword}`;
 		
 		const getMovie = async () => {
-			const { Response , Search :movies } = await fetch(endPoint).then
-		}
+			const { Response , Search :movies } = await fetch(endPoint).then(res => res.json());
+			Response && setMovies(movies)
+		};
+		getMovie();
+
 	
-	})
+	},[keyword]);
+
+	
 }
 
 
