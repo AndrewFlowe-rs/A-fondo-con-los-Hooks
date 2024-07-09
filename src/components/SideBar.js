@@ -37,9 +37,11 @@ function SideBar(){
                 {/*<!-- Heading -->*/}
                 <div className="sidebar-heading">Actions</div>
 
-                <li className='nav-item nav-limk'>
-                    <Link className = "nav-link" to = "/searchMovies">
-                    <i className="fas fa-fw fa-table"></i>
+                <li className="nav-item nav-link">
+                <Link className="nav-link" to="/searchMovies">
+                        <i className="fas fa-fw fa-table"></i>
+                        <span>Search Movies</span></Link>
+                </li>
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
@@ -62,6 +64,8 @@ function SideBar(){
                         <i className="fas fa-fw fa-table"></i>
                         <span>Tables</span></Link>
                 </li>
+
+                
 
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider d-none d-md-block"/>
@@ -96,6 +100,9 @@ function SideBar(){
                 </Route>
                 <Route path="/ContentRowMovies">
                     <ContentRowMovies />
+                </Route>
+                <Route path="/searchMovies">
+                    <SearchMovies />
                 </Route>
                 <Route component={NotFound} />
             </Switch>
